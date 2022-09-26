@@ -3,9 +3,9 @@
 #### ATUALIZA SISTEMA DO SERVIDOR ####
 
 echo "Atuaizando sistemas do servidor ..."
-apt update
+apt-get update
 
-apt upgrade -y
+apt-get upgrade -y
 
 #### PARA SERVIDOOR NGINX E EXCLUIR ARQUIVO INDEX.HTML ####
 
@@ -16,8 +16,8 @@ rm /var/www/html/index.html
 #### INSTALA PACOTES APACHE E UNZIP ####
 
 echo "Instalando Apache e Unzip ..."
-apt install apache2 -y
-apt install unzip -y
+apt-get install apache2 -y
+apt-get install unzip -y
 rm /var/www/html/index*
 
 #### BAIXA E COPIA ARQUIVOS PARA PASTA HTML ####
